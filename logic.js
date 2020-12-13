@@ -10,7 +10,7 @@ var humidity = ("#humidity");
 var windSpeed = $("#windSpeed");
 var UVIndex = $("#UV-index");
 // var currentDate = 
-var queryURL= "api.openweathermap.org/data/2.5/forecast?q=decatur&appid=fba36da2ac563b2d05033368e455a294";
+var queryURL= "api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "&appid=fba36da2ac563b2d05033368e455a294";
 
 
 
