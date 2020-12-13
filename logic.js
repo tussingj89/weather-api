@@ -23,7 +23,7 @@ search.on('click', function(event) {
 
 function citySearch(cityInput) {
     
-var queryURL= "api.openweathermap.org/data/2.5/forecast?q=dectur&appid=fba36da2ac563b2d05033368e455a294";
+var queryURL= "api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "&appid=fba36da2ac563b2d05033368e455a294";
 
 $.ajax({
     url: queryURL,
