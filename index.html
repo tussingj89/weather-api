@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="text-center">
+        <strong>Weather Dashboard</strong>
+        </h1>
+    </div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 bg-light">
+            <label class="switch" for="status-toggle">
+                <input checked type="checkbox" name="status-toggle" id="status-toggle" />
+                <span class="slider"></span>
+              </label>
+              <div class="status">Status: <span id="status">Fahrenheit</span></div>
+            <p class="search-header">Search by city</p>
+                <div class="input-group ">
+                <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="go" class="search">go</button>
+                </div>
+            </div>
+        <button class="btn btn-primary" type="button" id="clear-Button">clear history</button>
+        <form id="history"></form>
+    </div>
+    <div class="col-lg-8">
+        <div class="row">
+            <div class="col-lg-12 border border-dark">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span id="city-name" class="city-name"></span>
+                        <img id="currentImg" src="" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p id="temperature"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p id="humidity"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p id="windSpeed"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p id="UV-index"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3>7-Day Forecast</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-1 forecast"></div>
+                <div class="col-lg-1 forecast"></div>
+                <div class="col-lg-1 forecast"></div>
+                <div class="col-lg-1 forecast"></div>
+                <div class="col-lg-1 forecast"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="logic.js"></script>
+
+</body>
+</html>

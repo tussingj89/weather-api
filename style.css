@@ -1,0 +1,17 @@
+body {
+
+}
+.container {
+
+}
+.jumbotron {
+    background-color: blue;
+    color: white;    
+}
+#clear-button {
+    margin-top: 15px;
+}
+.forcast {
+    border-radius:  5px;
+    background-color: blue;
+}
