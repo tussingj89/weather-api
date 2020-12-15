@@ -1,9 +1,4 @@
-body {
 
-}
-.container {
-
-}
 .jumbotron {
     background-color: blue;
     color: white;    
@@ -11,7 +6,12 @@ body {
 #clear-button {
     margin-top: 15px;
 }
-.forcast {
-    border-radius:  5px;
+#forecast-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: blue;
+}
+.forecast {
+    margin: 10px;
 }
