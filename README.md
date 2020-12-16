@@ -24,4 +24,4 @@ weather API sourced from: https://openweathermap.org/
 
 # snapshot of the webpage
 
-![day-planner](assets/snapshot.png)
+![weather-api](snapshot.png)
