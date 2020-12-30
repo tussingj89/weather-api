@@ -5,6 +5,9 @@ This project is a weather dashboard that will allow you to search for the weathe
 This file works on any webpage, so the viewing of this project is as simple as following the link listed below.
 https://tussingj89.github.io/weather-api
 
+# technologys used
+html, css, bootstrap, jquery, and API calls
+
 # api calling
 
 Below is a sample of the code. With the use of APIs, you can call information that is not stored on your computer to add that information to your webpage.
@@ -25,3 +28,6 @@ weather API sourced from: https://openweathermap.org/
 # snapshot of the webpage
 
 ![weather-api](snapshot.png)
+
+# contact me at:
+tussing40@gmail.com
