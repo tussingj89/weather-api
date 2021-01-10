@@ -56,7 +56,7 @@ $.ajax({
     var lat = response.city.coord.lat;
     var lon = response.city.coord.lon;
     
-    //  uv-iNDEX Call for
+    //  uv-iNDEX Call for the longitude and latitude
      var UVQueryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?lat=" + lat + "&lon=" + lon + "&appid=fba36da2ac563b2d05033368e455a294&cnt=1";
      $.ajax({
         url: UVQueryURL,
