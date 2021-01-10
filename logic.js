@@ -39,7 +39,7 @@ function citySearch(cityId) {
     
 
     var queryURL= "https://api.openweathermap.org/data/2.5/forecast?q=" + cityId + "&appid=fba36da2ac563b2d05033368e455a294";
-    
+ //ajax call for the weather   
 $.ajax({
     url: queryURL,
     method: 'GET'
@@ -56,7 +56,7 @@ $.ajax({
     var lat = response.city.coord.lat;
     var lon = response.city.coord.lon;
     
-    //  uv-iNDEX Call
+    //  uv-iNDEX Call for
      var UVQueryURL = "https://api.openweathermap.org/data/2.5/uvi/forecast?lat=" + lat + "&lon=" + lon + "&appid=fba36da2ac563b2d05033368e455a294&cnt=1";
      $.ajax({
         url: UVQueryURL,
