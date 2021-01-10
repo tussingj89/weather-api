@@ -11,13 +11,18 @@ $("#go").on("click", function (event) {
     var textContent = $(this).siblings("input").val();
     citylist.push(textContent);
     localStorage.setItem('cityName', JSON.stringify(citylist));
+    $("#history").empty();
+    historyButton();
 });
+function historyButton(){
 var lastSearch = JSON.parse(localStorage.getItem("cityName"));
-var searchDiv = $("<button class='btn border text-muted mt-1 shadow-sm bg-white rounded' style='width: 12rem;'>").text(lastSearch);
+for (var i = 0; i < lastSearch.length; i++){
+var searchDiv = $("<button class='btn border text-muted mt-1 shadow-sm bg-white rounded' style='width: 12rem;'>").text(lastSearch[i]);
 var psearch = $("<div>");
-psearch.append(searchDiv)
+psearch.append(searchDiv);
 $("#history").prepend(psearch);
-
+}
+}
 
 $("#history").on("click", function(event) {
     event.preventDefault();
